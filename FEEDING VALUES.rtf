@@ -1,0 +1,85 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 ALTER TABLE  Associate_Status\
+CHANGE COLUMN `Batch_Id` `Batch_Info` CHAR(20) NULL DEFAULT NULL ,\
+CHANGE COLUMN `Trainer_Id` `Trainer_Info` CHAR(20) NULL DEFAULT NULL ,\
+CHANGE COLUMN `Start_Date` `Start_Date` DATE NULL DEFAULT NULL ,\
+CHANGE COLUMN `End_Date` `End_Date` DATE NULL DEFAULT NULL ;\
+\
+\
+INSERT INTO Trainer_Info VALUES ("F001","Mr.","PANKAJ GHOSH","Pune","Java","Bachelor of Technology","12","Pankaj.Ghosh@alliance.com","fac1@123");\
+INSERT INTO Trainer_Info VALUES ("F002","Mr.","SANJAY RADHAKRISHNAN ","Bangalore","DotNet","Bachelor of Technology","12","Sanjay.Radhakrishnan@alliance.com","fac2@123");\
+INSERT INTO Trainer_Info VALUES ("F003","Mr.","VIJAY MATHUR","Chennai","Mainframe","Bachelor of Technology","10","Vijay.Mathur@alliance.com","fac3@123");\
+INSERT INTO Trainer_Info VALUES ("F004","Mrs.","NANDINI NAIR","Kolkata","Java","Master of Computer Applications","9","Nandini.Nair@alliance.com","fac4@123");\
+INSERT INTO Trainer_Info VALUES ("F005","Miss.","ANITHA PAREKH","Hyderabad","Testing","Master of Computer Applications","6","Anitha.Parekh@alliance.com","fac5@123");\
+INSERT INTO Trainer_Info VALUES ("F006","Mr.","MANOJ AGRAWAL ","Mumbai","Mainframe","Bachelor of Technology","9","Manoj.Agrawal@alliance.com","fac6@123");\
+INSERT INTO Trainer_Info VALUES ("F007","Ms.","MEENA KULKARNI","Coimbatore","Testing","Bachelor of Technology","5","Meena.Kulkarni@alliance.com","fac7@123");\
+INSERT INTO Trainer_Info VALUES ("F009","Mr.","SAGAR MENON ","Mumbai","Java","Master of Science In Information Technology","12","Sagar.Menon@alliance.com","fac8@123");\
+\
+\
+INSERT INTO Batch_Info VALUES ("B001","MRS.SWATI ROY","MSP");\
+INSERT INTO Batch_Info VALUES ("B002","MRS.ARURNA K","HEALTHCARE");\
+INSERT INTO Batch_Info VALUES ("B003","MR.RAJESH KRISHNAN","LIFE SCIENCES");\
+INSERT INTO Batch_Info VALUES ("B004","MR.SACHIN SHETTY","BFS");\
+INSERT INTO Batch_Info VALUES ("B005","MR.RAMESH PATEL","COMMUNICATIONS");\
+INSERT INTO Batch_Info VALUES ("B006","MRS.SUSAN CHERIAN","RETAIL & HOSPITALITY");\
+INSERT INTO Batch_Info VALUES ("B007","MRS.SAMPADA JAIN","MSP");\
+INSERT INTO Batch_Info VALUES ("B008","MRS.KAVITA REGE","BPO");\
+\
+\
+INSERT INTO Module_Info VALUES ("O10SQL","Oracle 10g SQL ","16");\
+INSERT INTO Module_Info VALUES ("O10PLSQL","Oracle 10g PL/ SQL ","16");\
+INSERT INTO Module_Info VALUES ("J2SE","Core Java SE 1.6","288");\
+INSERT INTO Module_Info VALUES ("J2EE","Advanced Java EE 1.6","80");\
+INSERT INTO Module_Info VALUES ("JAVAFX","JavaFX 2.1","80");\
+INSERT INTO Module_Info VALUES ("DOTNT4",".Net Framework 4.0 ","50");\
+INSERT INTO Module_Info VALUES ("SQL2008","MS SQl Server 2008","120");\
+INSERT INTO Module_Info VALUES ("MSBI08","MS BI Studio 2008","158");\
+INSERT INTO Module_Info VALUES ("SHRPNT","MS Share Point ","80");\
+INSERT INTO Module_Info VALUES ("ANDRD4","Android 4.0","200");\
+INSERT INTO Module_Info VALUES ("EM001","Instructor","0");\
+INSERT INTO Module_Info VALUES ("EM002","Course Material","0");\
+INSERT INTO Module_Info VALUES ("EM003","Learning Effectiveness","0");\
+INSERT INTO Module_Info VALUES ("EM004","Environment","0");\
+INSERT INTO Module_Info VALUES ("EM005","Job Impact","0");\
+INSERT INTO Module_Info VALUES ("TM001","Attendees","0");\
+INSERT INTO Module_Info VALUES ("TM002","Course Material","0");\
+INSERT INTO Module_Info VALUES ("TM003","Environment","0");\
+\
+INSERT INTO Associate_Info VALUES ("A001","Miss.","GAYATHRI NARAYANAN","Gurgaon","Java","Bachelor of Technology","Gayathri.Narayanan@hp.com","tne1@123");\
+INSERT INTO Associate_Info VALUES ("A002","Mrs.","RADHIKA MOHAN","Kerala","Java","Bachelor of Engineering In Information Technology","Radhika.Mohan@cognizant.com","tne2@123");\
+INSERT INTO Associate_Info VALUES ("A003","Mr.","KISHORE SRINIVAS","Chennai","Java","Bachelor of Engineering In Computers","Kishore.Srinivas@ibm.com","tne3@123");\
+INSERT INTO Associate_Info VALUES ("A004","Mr.","ANAND RANGANATHAN","Mumbai","DotNet","Master of Computer Applications","Anand.Ranganathan@finolex.com","tne4@123");\
+INSERT INTO Associate_Info VALUES ("A005","Miss.","LEELA MENON","Kerala","Mainframe","Bachelor of Engineering In Information Technology","Leela.Menon@microsoft.com","tne5@123");\
+INSERT INTO Associate_Info VALUES ("A006","Mrs.","ARTI KRISHNAN","Pune","Testing","Master of Computer Applications","Arti.Krishnan@cognizant.com","tne6@123");\
+INSERT INTO Associate_Info VALUES ("A007","Mr.","PRABHAKAR SHUNMUGHAM","Mumbai","Java","Bachelor of Technology","Prabhakar.Shunmugham@honda.com","tne7@123");\
+\
+\
+INSERT INTO Associate_Status  VALUES ("A001","O10SQL","B001","F001","2000-12-15","2000-12-25");\
+INSERT INTO Associate_Status  VALUES ("A002","O10SQL","B001","F001","2000-12-15","2000-12-25");\
+INSERT INTO Associate_Status  VALUES ("A003","O10SQL","B001","F001","2000-12-15","2000-12-25");\
+INSERT INTO Associate_Status  VALUES ("A001","O10PLSQL","B002","F002","2001-2-1","2001-2-12");\
+INSERT INTO Associate_Status  VALUES ("A002","O10PLSQL","B002","F002","2001-2-1","2001-2-12");\
+INSERT INTO Associate_Status  VALUES ("A003","O10PLSQL","B002","F002","2001-2-1","2001-2-12");\
+INSERT INTO Associate_Status  VALUES ("A001","J2SE","B003","F003","2002-8-20","2002-10-25");\
+INSERT INTO Associate_Status  VALUES ("A002","J2SE","B003","F003","2002-8-20","2002-10-25");\
+INSERT INTO Associate_Status  VALUES ("A001","J2EE","B004","F004","2005-12-1","2005-12-25");\
+INSERT INTO Associate_Status  VALUES ("A002","J2EE","B004","F004","2005-12-1","2005-12-25");\
+INSERT INTO Associate_Status  VALUES ("A003","J2EE","B004","F004","2005-12-1","2005-12-25");\
+INSERT INTO Associate_Status  VALUES ("A004","J2EE","B004","F004","2005-12-1","2005-12-25");\
+INSERT INTO Associate_Status  VALUES ("A005","JAVAFX","B005","F006","2005-12-4","2005-12-20");\
+INSERT INTO Associate_Status  VALUES ("A006","JAVAFX","B005","F006","2005-12-4","2005-12-20");\
+INSERT INTO Associate_Status  VALUES ("A006","SQL2008","B006","F007","2007-6-21","2007-6-28");\
+INSERT INTO Associate_Status  VALUES ("A007","SQL2008","B006","F007","2007-6-21","2007-6-28");\
+INSERT INTO Associate_Status  VALUES ("A002","MSBI08","B007","F006","2009-6-26","2009-6-29");\
+INSERT INTO Associate_Status  VALUES ("A003","MSBI08","B007","F006","2009-6-26","2009-6-29");\
+INSERT INTO Associate_Status  VALUES ("A004","MSBI08","B007","F006","2009-6-26","2009-6-29");\
+INSERT INTO Associate_Status  VALUES ("A002","ANDRD4","B008","F005","2010-6-5","2010-6-28");\
+INSERT INTO Associate_Status  VALUES ("A005","ANDRD4","B008","F005","2010-6-5","2010-6-28");\
+INSERT INTO Associate_Status  VALUES ("A003","ANDRD4","B009","F005","2011-8-1","2011-8-20");\
+INSERT INTO Associate_Status  VALUES ("A006","ANDRD4","B009","F005","2011-8-1","2011-8-20");}
